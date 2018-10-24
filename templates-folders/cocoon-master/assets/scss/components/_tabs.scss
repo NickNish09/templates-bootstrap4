@@ -1,0 +1,22 @@
+.hosting_nav{
+  margin-top: 0;
+  position: relative;
+  top: -60px;
+  .nav-item{
+    padding: 25px;
+  }
+  a.nav-link{
+    background-color: #ffffff;
+    color: #0652fd;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.07);
+    padding: 70px 30px;
+    img{
+      max-width: 64px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+  }
+}

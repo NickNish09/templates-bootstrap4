@@ -1,0 +1,140 @@
+.blog_card{
+  margin-bottom: 30px;
+  padding: 15px;
+  .blog_card_top{
+    position: relative;
+    .blog_date{
+      background-color: #ffffff;
+      width: 60px;
+      text-align: center;
+      border: solid 1px #99896e;
+      position: absolute;
+      top: -15px;
+      left: 15px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 0.7;
+      padding: 15px 5px;
+      word-break: break-word;
+      color: $color-black;
+      span{
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-dark-gray;
+      }
+    }
+  }
+
+  .blog_card_bottom{
+    padding: 25px 0;
+    h4{
+      margin-bottom: 5px;
+      a{
+        font-size: 20px;
+        margin-bottom: 15px;
+        display: block;
+        text-transform: capitalize;
+        color: $color-black;
+      }
+    }
+    .meta_data{
+      font-size: 13px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      span{
+        padding: 0 5px;
+        border-right: 1px $color-primary solid;
+        &:last-child{
+          border-right: 0 $color-primary solid;
+        }
+      }
+    }
+  }
+}
+
+
+//widget
+
+.widget {
+  margin-bottom: 50px;
+  .widget-title{
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: $color-black;
+    text-transform: capitalize;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.widget_search{
+  position: relative;
+  width: 100%;
+  input{
+    border: 0;
+    border-bottom: solid 1px $color-primary;
+    padding: 12px;
+    width: 100%;
+    outline: 0;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+.widget_categories{
+  position: relative;
+  width: 100%;
+  ul li a{
+    padding: 6px 0;
+    display: block;
+    width: 100%;
+    color: $color-dark-gray;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    &:hover{
+      color: $color-primary;
+    }
+  }
+}
+
+.widget_instagram{
+  position: relative;
+  width: 100%;
+  ul li{
+    display: inline-block;
+    width: 32%;
+    padding: 1%;
+    margin: 2px 0;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.widget_tags{
+  position: relative;
+  width: 100%;
+  ul li{
+    display: inline-block;
+    margin: 7px 2px;
+    a{
+      display: block;
+      padding: 10px 12px;
+      background-color: $color-gray;
+      color: $color-dark-gray;
+      border: solid 1px $color-gray;
+      font-size: 12px;
+      font-weight: 500;
+      @include single-transition(all,ease-in-out,0.4s);
+      &:hover{
+        background-color: $color-light;
+        border: solid 1px $color-primary;
+        @include single-transition(all,ease-in-out,0.4s);
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.contact_box{
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  label{
+    color: #000;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+
+}
+.map{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.form-control {
+  font-size: 12px;
+  padding: 12px 15px;
+  height: 50px;
+  border-radius: 1px;
+  background-color: #f2f4f8;
+  border: solid 1px #f2f4f8;
+  margin-bottom: 25px;
+  outline: 0 !important;
+  font-style: italic;
+  @include single-transition(all , ease-in-out , 0.4s);
+  &:focus {
+    background-color: #ffffff;
+    border-color:$color-primary;
+    @include single-transition(all , ease-in-out , 0.4s);
+  }
+}
+textarea.form-control{
+  min-height: 200px;
+  resize: vertical;
+}

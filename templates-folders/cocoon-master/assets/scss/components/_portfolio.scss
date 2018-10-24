@@ -1,0 +1,97 @@
+//portfolio style
+
+.project_box_one{
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor:crosshair;
+  @include single-transition(all , ease-in-out , 0.4s);
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include single-transition(all , ease-in-out , 0.4s);
+  }
+  .product_info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    @include single-transition(all , ease-in-out , 0.4s);
+    opacity: 0;
+    .product_info_text{
+      display: table;
+      table-layout: fixed;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      .product_info_text_inner{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        h4{
+          color: $color_light;
+          font-size: 14px;
+          text-transform: capitalize;
+          -webkit-transform: translateY(+10px);
+          transform: translateY(+10px);
+          @include single-transition(all , ease-in-out , 0.4s);
+          opacity: 0;
+          margin-bottom: 5px;
+        }
+        i{
+          color: $color_light;
+          font-size: 20px;
+          margin-bottom: 15px;
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+          @include single-transition(all , ease-in-out , 0.4s);
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &:hover{
+    img{
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari */
+      transform: scale(1.1); /* Standard syntax */
+      @include single-transition(all , ease-in-out , 0.4s);
+    }
+    .product_info{
+      opacity: 1;
+      .product_info_text_inner{
+        h4{
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+        i{
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//pop up img
+
+.mfp-title {
+  text-align: left;
+  line-height: 18px;
+  color: #ffffff;
+  word-wrap: break-word;
+  padding-right: 36px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.gutters .grid-item{
+  margin-bottom: 30px;
+}

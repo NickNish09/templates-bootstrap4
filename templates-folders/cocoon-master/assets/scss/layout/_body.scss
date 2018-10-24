@@ -1,0 +1,33 @@
+.body_block{
+  background-color: $color-light;
+  padding:50px 30px;
+}
+.img_card{
+  position: relative;
+  .content_section{
+    background-color: $color-light;
+    position: relative;
+    padding: 50px 0;
+    .content_box{
+      position: relative;
+      left: 0;
+      right: 0;
+      margin-right: -75px;
+      z-index: 999;
+      top: 0;
+      width: auto;
+      bottom: 0;
+      padding: 15px;
+      min-height: 500px;
+      background-color: $color-light;
+      .content_box_inner{
+        padding: 25px 20px 25px 15px;
+      }
+    }
+  }
+  .img_section{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
