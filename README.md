@@ -4,6 +4,8 @@
 - Execute chmod +x open-all-templates.sh
 - Execute ./open-all-templates.sh
 
+# Para as outras categorias de template, faça a mesma coisa soq com os nomes dos .sh que você quer
+
 # Top Templates
 
 ## Landing Page scroll:
